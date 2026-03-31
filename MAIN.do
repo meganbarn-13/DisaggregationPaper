@@ -18,13 +18,13 @@ global proj_root "'c(pwd)"
 * 2. SUB-FOLDERS
 *-------------------------------------------------------------------------------
 global data    "${proj_root}/data"
-global code    "${proj_root}/code"
+global scripts    "${proj_root}/scripts"
 global results "${proj_root}/results"
 
 *-------------------------------------------------------------------------------
 * 3. RUN ANALYSIS
 *-------------------------------------------------------------------------------
-do "${code}/near-home_estimates.do"
-do "${code}/near-site_estimates.do"
+do "${scripts}/near-home_estimates.do"
+do "${scripts}/near-site_estimates.do"
 
 display "All files run. Results are in ${results}"
